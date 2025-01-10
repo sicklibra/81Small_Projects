@@ -7,20 +7,22 @@ import static DonutGame.SecretNum.*;
 
 public class Donut{
     //declare open var for secret number. 
-    static SecretNum secret;
+    public static SecretNum secret;
 
     //This function is the prompt that utilizes a while loop to ensure the correct input for the menu choice.
     public static boolean getRules(){
-        System.out.println("This is a guess the number game./n would you like to hear the rules? Y/N");
+        System.out.println("This is a guess the number game./n would you like to hear the rules? (Y/N)");
         Scanner scnr = new Scanner(System.in);
-        String rules="Z";//set rules to an arbitrary character to kick off while loop
-        while (!rules.toUpperCase().equals("Y") || !rules.toUpperCase().equals("N") ) {
+        String rules="z";//set rules to an arbitrary character to kick off while loop
+        while (!rules.equalsIgnoreCase("Y") || !rules.equalsIgnoreCase("N") ) {
             rules= scnr.next();
-            rules= rules.toUpperCase();//equates to ignore case
-            if(rules.equals("Y")){
+            if(rules.equalsIgnoreCase("Y")){
                 scnr.close();
                 return true;
-            }            
+            }
+            else if (rules.equalsIgnoreCase("N")){
+                break;
+            }
         }
         scnr.close();
         return false;
@@ -35,18 +37,35 @@ public class Donut{
         System.out.println("one of your numbers is right");
         System.out.println("Winner Winner");
     }
+    public static boolean keepPlaying(){
+        Scanner scnr = new Scanner(System.in);
+        String playing = "z";
+        System.out.println("Would you like to play again? (Y/N)");
+        while (!playing.equalsIgnoreCase("Y") || !playing.equalsIgnoreCase("N") ) {
+            playing = scnr.next();
+            if (playing.equalsIgnoreCase("Y")) {
+                scnr.close();
+                return true;
+            }
+            else if (playing.equalsIgnoreCase("N")) {
+                break;
+            }
+        }
+        scnr.close();
+        return false;
+    }
 
-    public static void main(String args[]){
-        Boolean rules = getRules();//starts with the menu prompt to see if player wants to see the rules.
-        if (rules == true){
+    public static void main(String[] args){
+
+        boolean rules = getRules();//starts with the menu prompt to see if player wants to see the rules.
+        if (rules){
             printRules();//if they want them they get them 
         }
-        boolean playing = true;//this allows player to play as many times as theyd like.
+        boolean playing = true;//this allows player to play as many times as they'd like.
         while (playing){
             secret= new SecretNum();
             secret.play();
+            playing=keepPlaying();
         }
-
-
     }
 }

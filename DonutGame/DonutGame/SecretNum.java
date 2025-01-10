@@ -1,7 +1,21 @@
 package DonutGame;
 import java.util.Random;
 import java.util.Scanner;
-
+/*This class is obviously more complicated than it needs to be.
+* The most obvious change would be for the secret number to be saved as a string
+* once the validation process is complete. Another way to generate it would be to
+* take an array list and use random positions within that array list and concatenate
+* those characters into a string.
+* Possible improvements may include:
+* 1-an input allowing the player to choose the number of digits
+*   -This could be achieved by multiplying the input by 10 for the low end
+*       and taking (result *10)-1 for the high end.
+* 2- Allowing the player to select how many guesses they get
+*   -Make a class variable that holds max guesses and set the loop to
+*       terminate when max guesses is reached.
+* 3- integrating a GUI for the game its self though this is currently beyond my skill set
+* Allowing repeat digits would make the game too difficult and defeat the purpose of
+* playing in the first place*/
 public class SecretNum {
     int secret;
     public SecretNum() {
@@ -23,7 +37,7 @@ public class SecretNum {
     }
 
     private boolean checkNum(int num){
-        String strNum=Integer.toString(num);
+        String strNum= convertStr(num);
         //determine if each digit is unique.
         for(int i=0;i<3;i++){
             for (int j=0;j<3;j++){
@@ -36,19 +50,23 @@ public class SecretNum {
         return true;
     }
     public void play(){
-        int guesses=0;
-        Boolean winner=false;
+        int guesses=1;
+        int guess=0;
+        boolean winner=false;
         Scanner scnr = new Scanner(System.in);
-        while (winner==false && guesses<10){
+        while (!winner && guesses<11){
             System.out.print("Enter your guess: ");
-            int guess = scnr.nextInt();
-            System.out.println("You guessed: "+guess);
+            guess = scnr.nextInt();
+            System.out.println("guess:" + guesses + "   You guessed: "+guess);
             winner=checkGuess(guess);
+            guesses++;
+            if(winner || guesses==11){
+                scnr.close();
+            }
         }
     }
     private String convertStr(int num){
-        String strNum=Integer.toString(num);
-        return strNum;
+        return Integer.toString(num);
     }
     private boolean checkGuess(int guess) {
         if (guess == secret) {
