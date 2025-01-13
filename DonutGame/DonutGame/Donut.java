@@ -17,16 +17,12 @@ public class Donut{
         while (!rules.equalsIgnoreCase("Y") || !rules.equalsIgnoreCase("N") ) {
             rules= scnr.next();
             if(rules.equalsIgnoreCase("Y")){
-                scnr.nextLine();
-                scnr.close();
                 return true;
             }
             else if (rules.equalsIgnoreCase("N")){
                 break;
             }
         }
-        scnr.nextLine();
-        scnr.close();
         return false;
     }
     //self explanitory prints rules
@@ -46,8 +42,6 @@ public class Donut{
         while (!playing.equalsIgnoreCase("Y") || !playing.equalsIgnoreCase("N") ) {
             playing = scnr.next();
             if (playing.equalsIgnoreCase("Y")) {
-                scnr.nextLine();
-                scnr.close();
                 return true;
             }
             else if (playing.equalsIgnoreCase("N")) {

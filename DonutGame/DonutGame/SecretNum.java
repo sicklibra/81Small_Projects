@@ -53,17 +53,13 @@ public class SecretNum {
         int guesses=1;
         int guess;
         boolean winner=false;
-        Scanner playin = new Scanner(System.in);
+        Scanner scnr = new Scanner(System.in);
         while (!winner && guesses<11){
             System.out.print("Enter your guess: ");
-            playin.nextLine();
-            guess = playin.nextInt();
+            guess = scnr.nextInt();
             System.out.println("guess:" + guesses + "   You guessed: "+guess);
             winner=checkGuess(guess);
             guesses++;
-            if(winner || guesses==11){
-                playin.close();
-            }
         }
     }
     private String convertStr(int num){
