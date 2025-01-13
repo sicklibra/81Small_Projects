@@ -51,17 +51,18 @@ public class SecretNum {
     }
     public void play(){
         int guesses=1;
-        int guess=0;
+        int guess;
         boolean winner=false;
-        Scanner scnr = new Scanner(System.in);
+        Scanner playin = new Scanner(System.in);
         while (!winner && guesses<11){
             System.out.print("Enter your guess: ");
-            guess = scnr.nextInt();
+            playin.nextLine();
+            guess = playin.nextInt();
             System.out.println("guess:" + guesses + "   You guessed: "+guess);
             winner=checkGuess(guess);
             guesses++;
             if(winner || guesses==11){
-                scnr.close();
+                playin.close();
             }
         }
     }
@@ -69,6 +70,9 @@ public class SecretNum {
         return Integer.toString(num);
     }
     private boolean checkGuess(int guess) {
+        if (guess<100 || guess>999){
+            System.out.println("Invalid guess. Remember 3 digits");
+        }
         if (guess == secret) {
             System.out.println("Winner Winner!");
             return true;
@@ -99,8 +103,6 @@ public class SecretNum {
         for (int i = 0; i < 3; i++) {
             if (secStr.charAt(i) == guessStr.charAt(i)) {
                 rightPlacePos[i] = 1;
-            } else {
-                rightPlacePos[i] = 0;
             }
         }
         return rightPlacePos;

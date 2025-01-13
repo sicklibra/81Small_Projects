@@ -17,6 +17,7 @@ public class Donut{
         while (!rules.equalsIgnoreCase("Y") || !rules.equalsIgnoreCase("N") ) {
             rules= scnr.next();
             if(rules.equalsIgnoreCase("Y")){
+                scnr.nextLine();
                 scnr.close();
                 return true;
             }
@@ -24,6 +25,7 @@ public class Donut{
                 break;
             }
         }
+        scnr.nextLine();
         scnr.close();
         return false;
     }
@@ -44,6 +46,7 @@ public class Donut{
         while (!playing.equalsIgnoreCase("Y") || !playing.equalsIgnoreCase("N") ) {
             playing = scnr.next();
             if (playing.equalsIgnoreCase("Y")) {
+                scnr.nextLine();
                 scnr.close();
                 return true;
             }
@@ -59,7 +62,7 @@ public class Donut{
 
         boolean rules = getRules();//starts with the menu prompt to see if player wants to see the rules.
         if (rules){
-            printRules();//if they want them they get them 
+            printRules();//if they want them they get them
         }
         boolean playing = true;//this allows player to play as many times as they'd like.
         while (playing){
