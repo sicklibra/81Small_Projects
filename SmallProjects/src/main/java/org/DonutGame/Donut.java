@@ -1,8 +1,6 @@
-package DonutGame;
+package org.DonutGame;
 
 import java.util.Scanner;
-
-import static DonutGame.SecretNum.*;
 
 
 public class Donut{

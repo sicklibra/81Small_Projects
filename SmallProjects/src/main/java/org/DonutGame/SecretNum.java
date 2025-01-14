@@ -1,4 +1,4 @@
-package DonutGame;
+package org.DonutGame;
 import java.util.Random;
 import java.util.Scanner;
 /*This class is obviously more complicated than it needs to be.
