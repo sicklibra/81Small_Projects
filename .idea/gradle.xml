@@ -12,6 +12,15 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TriangleEvaluator" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../Gradle/gradle-8.7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/TriangleEvaluator" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>

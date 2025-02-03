@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/SmallProjects.iml" filepath="$PROJECT_DIR$/SmallProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmallProjects.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SmallProjects.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmallProjects.test.iml" filepath="$PROJECT_DIR$/.idea/modules/SmallProjects.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TriangleEvaluator.iml" filepath="$PROJECT_DIR$/TriangleEvaluator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TriangleEvaluator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TriangleEvaluator.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TriangleEvaluator.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TriangleEvaluator.test.iml" />
     </modules>
   </component>
 </project>
