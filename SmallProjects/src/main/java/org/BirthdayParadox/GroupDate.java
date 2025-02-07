@@ -8,7 +8,7 @@ import org.javatuples.Pair;
 public class GroupDate {
 
     //Dependency for tuple in build.gradle.kts need to figure out how to use.
-    final [] months =
+    final String [] months = {}
     Pair<String, Integer> date;
     Pair[] groupDates;
     public GroupDate(int qty) {
