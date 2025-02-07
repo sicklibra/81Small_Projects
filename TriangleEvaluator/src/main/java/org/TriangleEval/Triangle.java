@@ -6,7 +6,7 @@ import java.util.Arrays;
 * triangle the legs can make and returns a print statement letting the user
 * know. this is an exercise for testing and utilization of enumeration.
 */
-public class TriangleType {
+public class Triangle {
     int[] sides;
     //Set up enum with baked in print statements for return.
     enum Tri{
@@ -38,7 +38,7 @@ public class TriangleType {
 
     }
     //Constructor making a sorted list of legs for eval.
-    public TriangleType(int a, int b, int c){
+    public Triangle(int a, int b, int c){
        sides = new int[]{a,b,c};
        Arrays.sort(sides);
     }
