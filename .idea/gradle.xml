@@ -4,6 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/BirthdayParadox" />
+        <option name="gradleHome" value="" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/SmallProjects" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../Gradle/gradle-8.7" />
         <option name="modules">

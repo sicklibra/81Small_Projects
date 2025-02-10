@@ -1,4 +1,4 @@
-package org.BirthdayParadox;
+package BirthdayParadox;
 
 import org.javatuples.Pair;
 /*in this I abandoned the idea of using the Date time functions using the

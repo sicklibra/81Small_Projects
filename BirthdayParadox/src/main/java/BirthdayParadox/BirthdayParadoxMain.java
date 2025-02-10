@@ -1,4 +1,4 @@
-package org.BirthdayParadox;
+package BirthdayParadox;
 
 import java.time.temporal.JulianFields;
 import java.util.Scanner;
