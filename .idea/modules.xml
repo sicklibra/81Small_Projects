@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/TriangleEvaluator.iml" filepath="$PROJECT_DIR$/TriangleEvaluator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TriangleEvaluator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TriangleEvaluator.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TriangleEvaluator.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TriangleEvaluator.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.BirthdayParadox.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.BirthdayParadox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.BirthdayParadox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.BirthdayParadox.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.BirthdayParadox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.BirthdayParadox.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.SmallProjects.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.SmallProjects.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.SmallProjects.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.SmallProjects.test.iml" />
     </modules>

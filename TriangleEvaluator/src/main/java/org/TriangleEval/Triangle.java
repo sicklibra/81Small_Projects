@@ -16,7 +16,7 @@ public class Triangle {
         SCALENE("Scalene"),
         EQUILATERAL("Equilateral"),
         ISOSCELES("Isosceles"),
-        NOTTRI("Not a triangle")
+        NOTTRI("Not a triangle");
 
         String prettyPrint;
 
@@ -33,7 +33,7 @@ public class Triangle {
 
     //Public call to get the triangle type
     public String getType() {
-        return type.toString();
+        return type.prettyPrint;
     }
 
     //returns triangle enum after evaluation.
@@ -53,6 +53,9 @@ public class Triangle {
             else {
                 return TirangleTypeEnum.ISOSCELES;
             }
+        }
+        else if (sides[1] == sides[2]) {
+            return TirangleTypeEnum.ISOSCELES;
         }
         //only option left.
         else {
