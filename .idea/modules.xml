@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/81Small_Projects.iml" filepath="$PROJECT_DIR$/81Small_Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/BirthdayParadox.iml" filepath="$PROJECT_DIR$/BirthdayParadox.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SmallProjects.iml" filepath="$PROJECT_DIR$/SmallProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Donut.iml" filepath="$PROJECT_DIR$/Donut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Donut.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Donut.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Donut.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Donut.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmallProjects.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SmallProjects.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmallProjects.test.iml" filepath="$PROJECT_DIR$/.idea/modules/SmallProjects.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/TriangleEvaluator.iml" filepath="$PROJECT_DIR$/TriangleEvaluator.iml" />

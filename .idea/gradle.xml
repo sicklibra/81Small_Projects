@@ -13,6 +13,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Donut" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../Gradle/gradle-8.7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Donut" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/SmallProjects" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../Gradle/gradle-8.7" />
         <option name="modules">
