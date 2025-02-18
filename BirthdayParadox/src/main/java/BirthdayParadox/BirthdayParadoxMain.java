@@ -1,6 +1,5 @@
 package BirthdayParadox;
 
-import java.time.temporal.JulianFields;
 import java.util.Scanner;
 
 /*In this program, I will be identifying the probability of two people having the same
@@ -33,13 +32,17 @@ public class BirthdayParadoxMain {
     public static void main(String[] args){
         System.out.println("Here, we can calculate the likelihood of you sharing a Birthday");
         System.out.println("with someone given a particular group size");
-        int group=-1;
-        while(group<=0) {
-            group = getNumPeople();
-            if (group <= 0) {
+        int groupsize=-1;
+        while(groupsize<=0) {
+            groupsize = getNumPeople();
+            if (groupsize <= 0) {
                 System.out.println("Please enter a positive integer: ");
             }
         }
-
+        GroupDate group= new GroupDate(groupsize);
+        System.out.println("Please wait while we generate the probability of people having the same birthday!");
+        group.generateProbability();
+        float prob = group.getProbability();
+        System.out.println("With a group of " + groupsize +" People. The Probability of at least 2 having the same birthday is:\n"+prob+"%");
     }
 }
